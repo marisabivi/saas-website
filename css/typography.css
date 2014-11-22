@@ -1,5 +1,6 @@
 html {
-  font: normal 100%/1.5 "Playfair", serif;
+  font: normal 105%/2 "Josefin Sans", serif;
+  font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -146,5 +147,5 @@ h1, h2, h3, h4, h5, h6,
 .title,
 .intro,
 .brand-family {
-    font-family: "Rambla", sans-serif;
+    font-family: "Quicksand", serif;
 }
