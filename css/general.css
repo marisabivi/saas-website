@@ -32,10 +32,13 @@ header {
 
 .title,
 .nav {
-    text-align: left;
+    text-align: center;
     letter-spacing: .01em;
     padding-left: 0.8rem;
-    top: -10em;
+}
+
+.nav a {
+    list-style-type:none;
 }
 
 .nav a,
@@ -43,7 +46,7 @@ header {
 .nav a:visited {
   display: block;
   color: #fff;
-  text-decoration: none;
+  text-decoration: none; 
 }
 
 .nav a:hover,
@@ -59,8 +62,7 @@ header {
 .signin,
 .j-button {
     letter-spacing: .05em;
-    position: relative;
-    display: inline-block;
+    display: block;
     font-weight: bold;
     color: white;
     white-space: nowrap;
@@ -71,26 +73,31 @@ header {
     background-image: linear-gradient(#d4f6fe,#9ee5f6);
     background-repeat: repeat-x;
     border-radius: 2px;
-    margin-left: 5px;
     width: 5em;
-    padding: .25em;
 }
+
+.hidden2 {
+     display: none;
+ }
 
 .billboard {
     overflow: hidden;
     size: 100;
     background-image: url(../images/3.jpg);
-    background-color: #d9e2ea;
+    background-color: white;
     background-repeat: no-repeat;
     background-position: right;
     background-size: 50em;
   }
 
 h1 > p { 
-    background-color: rgba(255, 255, 255, .8);
     font-weight: normal;
     text-transform: uppercase;
     position: absolute;
+ }
+
+ .white {
+     background-color: rgba(255, 255, 255, .9);
  }
 
 h3 {
@@ -114,8 +121,8 @@ h3 {
     background-color: #73d6ed;
     width:4em;
     padding: .25em;
-    border-radius: 2px;
-   
+    border-radius: 2px;  
+    margin: 0 0 0 10em
 }
 
 .popular {
@@ -136,15 +143,11 @@ footer {
   } 
     
  .hidden1 {
-     padding-left: 10em;    
+     margin: 0 0 0 12em;  
  }
     
- .hidden2 {
-     display: none;
- }
-
  .hidden3 {
-     display: none;
+     visibility: hidden;
  }
 
  .copyright {
@@ -175,6 +178,11 @@ footer {
 
 @media only screen and (min-width: 38em) {
 
+.nav {
+    text-align: center;
+    letter-spacing: .01em;
+    padding-left: 0.8rem;
+}
     
 .nav li {
     display: inline-block;
@@ -189,7 +197,7 @@ footer {
   }
     
  .hidden3 {
-     display: none;
+     visibility: hidden;
  }
     
   .nav-footer {
@@ -199,17 +207,10 @@ footer {
 }
 
 @media only screen and (min-width: 60em) {
- 
- .nav {
-   padding: 0;
-   text-align: right;
-   clear: left;
-   float: left;        
-  }
     
 .hidden3 {
-     display: none;
- } 
+     visibility: hidden;
+ }
 
 }
 
