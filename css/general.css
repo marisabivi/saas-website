@@ -31,17 +31,12 @@ header {
     overflow: hidden;
 }
 
-.title {
-    text-align: center;
-}
-
-
-.nav {
-  padding: 0;
-}
-
-.nav li {
-  display: block;
+.title,
+ .nav {
+    text-align: left;
+    letter-spacing: .01em;
+    padding-left: 0.8rem;
+    top: -10em;
 }
 
 .nav a,
@@ -58,8 +53,47 @@ header {
 .nav .nav-current, 
 .nav .nav-current:link,
 .nav .nav-current:visited {
-  background-color: #c5e1e7;
-  color: #fff;
+    background-color: #c5e1e7;
+    color: #fff;
+}
+
+.signin {
+    letter-spacing: .05em;
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    color: white;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-decoration: none;
+    background-color: #eee;
+    background-image: -webkit-linear-gradient(#d4f6fe, #9ee5f6);
+    background-image: linear-gradient(#d4f6fe,#9ee5f6);
+    background-repeat: repeat-x;
+    border-radius: 2px;
+    margin-left: 5px;
+}
+
+.billboard {
+    overflow: hidden;
+    size: 100;
+    background-image: url(../images/3.jpg);
+    background-color: #d9e2ea;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 50em;
+  }
+
+h1 > p { 
+    background-color: rgba(255, 255, 255, .8);
+    font-weight: normal;
+    text-transform: uppercase;
+    position: absolute;
+ }
+
+h3 {
+    border-top: 1px solid #ddd;
+    padding: 0.8rem;
 }
 
 .align-center {
@@ -70,6 +104,18 @@ header {
   text-align: right;
 }
 
+.j-button {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    background-color: #73d6ed;
+    width:4em;
+    padding: .25em;
+    border-radius: 2px;
+   
+}
+
 .popular {
     display: inline-block;
     float: left;
@@ -78,120 +124,65 @@ header {
 footer {
      background-color: #73d6ed;
      overflow:hidden;
+     padding: 0.8em 0 0 0.8em;
 }
 
-.nav-footer {
-     list-style-type: none;
-}
+@media only screen and (min-width: 25em) {
+    
+ .nav li {
+   list-style-type: none;
+  } 
 
   .nav-footer a,
   .nav-footer a:link,
   .nav-footer a:visited {
     display: inline-block;
+    list-style-type:none;
   }
 
   .nav-footer li::after {
     content: "·";
     display: inline-block;
-    display: none;
     width: 0.5em;
     color: #666;
-    float: left;
+    text-align: right;
+   
   }
 
   .nav-footer li:last-child::after {
     content: none;
   }
 
-
-@media only screen and (min-width: 25em) {
-
-  .nav {
-    text-align: center;
-  }
-
-  .nav li {
-    display: inline-block;
-  }
-
-  .billboard {
-    overflow: hidden;
-    background-image: url(../images/3.jpg);
-    background-color: #d9e2ea;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 25em;
-  }
-
-   h1 { 
-    margin: 5rem 0;
-    background-color: rgba(255, 255, 255, .8);
-    font-weight: normal;
-    text-transform: uppercase;
-    bottom: 1;
-    padding: 0.843rem 0.8rem;
-    position: absolute;
-
-   }
-
 }
 
 @media only screen and (min-width: 38em) {
 
-  .title,
-  .nav {
-    text-align: left;
-  }
-
   .discovery-text {
     padding-right: 1.5rem;
   }
+    
+.nav li {
+    display: inline-block;
+  } 
 
   .copyright {
     text-align: left;
   }
-
+    
   .nav-footer {
     text-align: right;
-  }
-
-  th,
-  td {
-    padding: 0.5rem;
-    text-align: left;
   }
 
 }
 
 @media only screen and (min-width: 60em) {
-
-  .moon-text {
-    padding-left: 1.5rem;
-  }
-
-  .stats {
-    overflow: hidden;
-  }
-
-  .stats > dt {
-    clear: left;
-    float: left;
-    margin-right: 0.75rem;
-    width: 11em;
-  }
-
-  .stats > dd {
-    float: left;
-  }
-
-  .discovery-text {
-    padding-left: 1.5rem;
-  }
-
-  th,
-  td {
-    padding: 0.75rem;
-    text-align: left;
-  }
+ 
+ .nav {
+   padding: 0;
+   text-align: right;
+   clear: left;
+   float: left;
+        
+}
 
 }
