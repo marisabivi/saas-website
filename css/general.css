@@ -31,7 +31,7 @@ header {
 }
 
 .title,
- .nav {
+.nav {
     text-align: left;
     letter-spacing: .01em;
     padding-left: 0.8rem;
@@ -209,13 +209,13 @@ footer {
     
 .hidden3 {
      display: none;
- }
-    
+ } 
 
 }
 
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 143em) {
   .hidden3 {
      display: inline-block;
+     float: left
  }
 }
