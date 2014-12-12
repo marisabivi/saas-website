@@ -91,6 +91,35 @@ header {
     width: 5em;
 }
 
+.signin-dark {
+    letter-spacing: .05em;
+    display: block;
+    font-weight: bold;
+    color: #51c6d8 ;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-decoration: none;
+    border: 3px solid #51c6d8;
+    border-radius: .3em;
+    background-repeat: repeat-x;
+    width: 5em;
+}
+
+button {
+    letter-spacing: .05em;
+    display: block;
+    font-weight: bold;
+    color: #51c6d8 ;
+    background-color: white;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-decoration: none;
+    border: 3px solid #51c6d8;
+    border-radius: .3em;
+    background-repeat: repeat-x;
+    width: 5em;
+        
+}
  .white {
      background-color: rgba(0, 0, 0, .4);
  }
