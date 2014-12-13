@@ -24,65 +24,52 @@
          </nav>
     </header>
     
-    <main>  
-        <br>
-        <div class="section-blue align-center">
-            <h2>Welcome!</h2>
-                <div class="push-1-2">
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email">
-                </div>
-            <div class="push-1-2">
-                <label for="password">Password</label>
-                <input type="password" id="password">
+    <main>
+        <form action="index.html" method="get">
+            <br>
+            <div class="section-blue align-center">
+                <h2>Welcome!</h2>
+                    <div class="push-1-2">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email">
+                    </div>
+                    <div class="push-1-2">
+                        <label for="password">Password</label>
+                        <input type="password" id="password">
+                    </div>
+                <div>
+                    <button class="island-half align-center">Login</button> 
+                </div> 
             </div>
-        </div>
+        </form>
 
         <h3 class="align-center">Popular Gifts</h3>
         <div class="grid">
-            <div class="unit gutter-1-2 unit-xs-1-2 unit-s-1-2 unit-m-1-3 unit-l-1-3" >
-                <img src="./images/gift.jpeg" alt="red">
+           <div class="unit gutter-1-2 unit-xs-1-2 unit-s-1-2 unit-m-1-3 unit-l-1-3" >
+               <!-- Hover images weren't working when I tried multiple ways with CSS -->
+                <img src="./images/gift.jpeg" alt="camera" onmouseover="this.src='./images/canon.jpg'" onmouseout="this.src='./images/gift.jpeg'">
             </div>
-            <div class="hidden3 unit gutter-1-2 unit-xs-1-2 unit-s-1-2 unit-m-1-3 unit-l-1-3" >
-                <img src="./images/red.jpg" alt="red square">
-            </div>
-            <div class="popular unit gutter-1-2 unit-xs-1-2 unit-s-1-2 unit-m-1-3 unit-l-1-3" >
-                <img src="./images/gift.jpeg" alt="">
-            </div>
-            <div class="hidden3  unit gutter-1-2 unit-xs-1-2 unit-s-1-2 unit-m-1-3 unit-l-1-3" >
-                <img src="./images/red.jpg" alt="red square">
+            <div class="popular gifts unit gutter-1-2 unit-xs-1-2 unit-s-1-2 unit-m-1-3 unit-l-1-3" >
+                <img src="./images/gift.jpeg" alt="childrens doctor kit" onmouseover="this.src='./images/health-toy.jpg'" onmouseout="this.src='./images/gift.jpeg'">
             </div>
             <div class="popular unit gutter-1-2 unit-xs-1-2 unit-s-1-2 unit-m-1-3 unit-l-1-3" >
-                <img src="./images/gift.jpeg" alt="">
-            </div>
-            <div class="hidden3 unit gutter-1-2 unit-xs-1-2 unit-s-1-2 unit-m-1-3 unit-l-1-3" >
-                <img src="./images/red.jpg" alt="red square">
+                <img src="./images/gift.jpeg" alt="Playstation4" onmouseover="this.src='./images/ps4.jpg'" onmouseout="this.src='./images/gift.jpeg'">
             </div>
             <div class="popular unit gutter-1-2 unit-xs-1-2 unit-s-1-2 unit-m-1-3 unit-l-1-3" >
-                <img src="./images/gift.jpeg" alt="">
-            </div>
-            <div class="hidden3 unit gutter-1-2 unit-xs-1-2 unit-s-1-2 unit-m-1-3 unit-l-1-3" >
-                <img src="./images/red.jpg" alt="red square">
+                <img src="./images/gift.jpeg" alt="Gold necklace" onmouseover="this.src='./images/gold-necklace.jpg'" onmouseout="this.src='./images/gift.jpeg'">
             </div>
             <div class="popular unit gutter-1-2 unit-xs-1-2 unit-s-1-2 unit-m-1-3 unit-l-1-3" >
-                <img src="./images/gift.jpeg" alt="">
-            </div>
-            <div class="hidden3 unit gutter-1-2 unit-xs-1-2 unit-s-1-2 unit-m-1-3 unit-l-1-3" >
-                <img src="./images/red.jpg" alt="red square">
+                <img src="./images/gift.jpeg" alt="toy boat" onmouseover="this.src='./images/knatterboot.jpg'" onmouseout="this.src='./images/gift.jpeg'">
             </div>
             <div class="popular unit gutter-1-2 unit-xs-1-2 unit-s-1-2 unit-m-1-3 unit-l-1-3" >
-                <img src="./images/gift.jpeg" alt="">
-            </div>
-        <div class="hidden3 unit gutter-1-2 unit-xs-1-2 unit-s-1-2 unit-m-1-3 unit-l-1-3" >
-                <img src="./images/red.jpg" alt="red square">
-            </div>
+                <img src="./images/gift.jpeg" alt="cordless drill" onmouseover="this.src='./images/cordless-drill.jpg'" onmouseout="this.src='./images/gift.jpeg'">
         </div>
     </main>
         
     <footer class="section-blue">
-            <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">
-                <p class="copyright push-0">© 2014 Marisa Bivi· <a href="#top">Top</a></p>
-            </div>
+        <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">
+             <p class="copyright push-0">© 2014 Marisa Bivi· <a href="#top">Top</a></p>
+        </div>
         <div class="grid">
             <div class="unit social unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">  
             <div class="grid">
@@ -93,20 +80,19 @@
                     <img src="images/twitter.png" class="social">
                 </div>
             </div>
-        </div>
+            </div>
             <div class="grid">
-            <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">    
-                <nav>            
-                    <ul class="nav-footer milli">
-                        <li><a class="island-1-2" href="#">How it Works</a></li>
-                        <li><a class="island-1-2" href="#">Why Gaver?</a></li>
-                        <li><a class="island-1-2" href="#">Plans</a></li>
-                    </ul>
-                </nav>
+                <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">    
+                    <nav>            
+                        <ul class="nav-footer milli">
+                            <li><a class="island-1-2" href="#">How it Works</a></li>
+                            <li><a class="island-1-2" href="#">Why Gaver?</a></li>
+                            <li><a class="island-1-2" href="#">Plans</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
-    </div>
-    </footer>
-        
+    </footer>     
 </body>
 </html>
