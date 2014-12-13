@@ -105,6 +105,17 @@ header {
     width: 5em;
 }
 
+.billboard {
+    overflow: hidden;
+     size: 100;
+    background-image: url(../images/giftCenterPresentBow.jpg);
+    background-repeat: no-repeat;
+    background-color: gray;
+    background-position: center;
+    background-size: 50em;
+    color: white;
+  } 
+ 
 button {
     letter-spacing: .05em;
     display: block;
@@ -152,6 +163,12 @@ h3 {
   
 }
 
+.section-blueboarder {
+    background-color: #51c6d8;
+    border: 5px solid white;
+ border-radius: .36em;
+}
+
 .section {
   background-color: #ffe9cd;
 }
@@ -169,8 +186,10 @@ h3 {
 
 .popular {
     display: inline-block;
-    float: left;
+    float: left: 
 }
+
+
 
 footer {
 
@@ -215,17 +234,6 @@ footer {
 
 @media only screen and (min-width: 25em) {
     
- .billboard {
-    overflow: hidden;
-     size: 100;
-    background-image: url(../images/giftCenterPresentBow.jpg);
-    background-repeat: no-repeat;
-    background-color: gray;
-    background-position: center;
-    background-size: 50em;
-    color: white;
-  } 
- 
  .copyright {
     text-align: left;
   }
@@ -235,7 +243,6 @@ footer {
     height: auto;
  }
     
-
 }
 
 @media only screen and (min-width: 38em) {
